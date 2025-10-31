@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///C:/parralax-portofolio/app/page.tsx"],"sourcesContent":["// app/page.tsx\r\nexport default function Home() {\r\n  return (\r\n    <main>\r\n      <h1>Selamat Datang di Next.js!</h1>\r\n      <p>Proyek Anda berhasil disetup secara manual.</p>\r\n    </main>\r\n  );\r\n}"],"names":[],"mappings":"AAAA,eAAe;;;;;;;AACA,SAAS;IACtB,qBACE,8OAAC;;0BACC,8OAAC;0BAAG;;;;;;0BACJ,8OAAC;0BAAE;;;;;;;;;;;;AAGT","debugId":null}}]
+}
