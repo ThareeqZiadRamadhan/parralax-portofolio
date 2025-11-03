@@ -1,6 +1,6 @@
 "use client";
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Twitter, Heart } from 'lucide-react';
+import { Github,Linkedin,Instagram, Heart } from 'lucide-react';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -48,7 +48,7 @@ export function Footer() {
             <h4 className="text-[#f4e8d0] dark:text-[#e8d7ba] mb-4 tracking-wider">CONNECT</h4>
             <div className="flex gap-4 mb-6">
               <motion.a
-                href="#"
+                href="https://github.com/ThareeqZiadRamadhan"
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 whileTap={{ scale: 0.95 }}
                 className="w-10 h-10 bg-[#4e342e] dark:bg-[#3e2723] border border-[#c9a961]/30 dark:border-[#c9a961]/30 rounded-full flex items-center justify-center text-[#c9a961] dark:text-[#b8935c] hover:bg-[#8b6f47] dark:hover:bg-[#a0826d] hover:text-white hover:border-[#8b6f47] dark:hover:border-[#a0826d] transition-all"
@@ -56,7 +56,7 @@ export function Footer() {
                 <Github size={18} />
               </motion.a>
               <motion.a
-                href="#"
+                href="https://www.linkedin.com/in/thareeq-ziad-ramadhan-1b862628b/"
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 whileTap={{ scale: 0.95 }}
                 className="w-10 h-10 bg-[#4e342e] dark:bg-[#3e2723] border border-[#c9a961]/30 dark:border-[#c9a961]/30 rounded-full flex items-center justify-center text-[#c9a961] dark:text-[#b8935c] hover:bg-[#8b6f47] dark:hover:bg-[#a0826d] hover:text-white hover:border-[#8b6f47] dark:hover:border-[#a0826d] transition-all"
@@ -64,12 +64,12 @@ export function Footer() {
                 <Linkedin size={18} />
               </motion.a>
               <motion.a
-                href="#"
+                href="https://www.instagram.com/nnaijjj/"
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 whileTap={{ scale: 0.95 }}
                 className="w-10 h-10 bg-[#4e342e] dark:bg-[#3e2723] border border-[#c9a961]/30 dark:border-[#c9a961]/30 rounded-full flex items-center justify-center text-[#c9a961] dark:text-[#b8935c] hover:bg-[#8b6f47] dark:hover:bg-[#a0826d] hover:text-white hover:border-[#8b6f47] dark:hover:border-[#a0826d] transition-all"
               >
-                <Twitter size={18} />
+                <Instagram size={18} />
               </motion.a>
             </div>
             <p className="text-[#f4e8d0]/60 dark:text-[#e8d7ba]/60 text-sm">
@@ -92,9 +92,10 @@ export function Footer() {
               and dedication
             </p>
             <div className="flex gap-6">
-              <a href="#" className="hover:text-[#c9a961] dark:hover:text-[#b8935c] transition-colors">Privacy</a>
-              <a href="#" className="hover:text-[#c9a961] dark:hover:text-[#b8935c] transition-colors">Terms</a>
-              <a href="#" className="hover:text-[#c9a961] dark:hover:text-[#b8935c] transition-colors">Colophon</a>
+               <a href="/ziad-resume.pdf" 
+                 download="ziad-resume.pdf" 
+                 className="hover:text-[#c9a961] dark:hover:text-[#b8935c] transition-colors">CV</a>
+              <a href="https://wa.me/+6281333424345" className="hover:text-[#c9a961] dark:hover:text-[#b8935c] transition-colors">Contact</a>
             </div>
           </div>
         </div>

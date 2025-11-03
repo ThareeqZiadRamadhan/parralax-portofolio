@@ -108,7 +108,7 @@ export function ContactChapter() {
         <motion.img 
           src="/card.png"
           alt="Quill decoration"
-          className="w-24 h-24"
+          className="w-35 h-30"
           animate={{ 
             y: [0, -15, 0],
             rotate: [0, 8, -8, 0]

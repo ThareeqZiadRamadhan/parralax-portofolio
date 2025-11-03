@@ -111,7 +111,7 @@ export function ProjectsChapter() {
         </motion.div>
 
         {/* Projects Grid */}
-        <div className="space-y-32">
+        <div className="space-y-32 mb-24">
           {projects.map((project, index) => {
             const projectRef = useRef<HTMLDivElement>(null);
             const { scrollYProgress: projectProgress } = useScroll({
@@ -273,6 +273,41 @@ export function ProjectsChapter() {
             );
           })}
         </div>
+
+        {/* View More Projects Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center"
+        >
+          <motion.a
+            href="https://github.com/ThareeqZiadRamadhan?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.05, y: -3 }}
+            whileTap={{ scale: 0.95 }}
+            className="relative inline-flex items-center gap-3 px-10 py-4 bg-[#8b6f47] dark:bg-[#a0826d] hover:bg-[#704214] dark:hover:bg-[#8b6f47] text-white text-lg rounded-sm transition-all duration-300 shadow-xl hover:shadow-2xl hover:shadow-[#8b6f47]/40 dark:hover:shadow-[#a0826d]/40 group overflow-hidden"
+          >
+            {/* Button glow effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
+            
+            <Layers size={20} className="relative z-10" />
+            <span className="relative z-10 font-serif">View More Projects</span>
+          </motion.a>
+          
+          {/* Ornamental decoration */}
+          <motion.div
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3, type: "spring" }}
+            className="mt-6 text-[#c9a961]/30 dark:text-[#b8935c]/30 text-2xl"
+          >
+            ✦ ✦ ✦
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );
