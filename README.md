@@ -21,7 +21,7 @@ Dibuat menggunakan **Next.js**, website ini tidak hanya terlihat bagus tetapi ju
 * **Library UI:** [**React**](https://reactjs.org/)
 * **Styling:** [**Tailwind CSS**] 
 * **Animasi & Parallax:** [**Framer Motion**] 
-* **Bahasa:** [**TypeScript / JavaScript**]
+* **Bahasa:** [**TypeScript**]
 * **Deployment:** [**Vercel**](https://vercel.com/)
 
 ---
